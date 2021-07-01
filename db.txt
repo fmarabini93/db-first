@@ -1,0 +1,12 @@
+DB name: usedCars
+
+vin: STRING - CHAR(17) - PRIMARY KEY
+brand: STRING - VARCHAR(20) - NOTNULL
+model: STRING - VARCHAR(20) - NOTNULL
+registration: DATE - DATE - NOTNULL
+km: INT - MEDIUMINT(1000000) - NOTNULL
+owners: INT - TINYINT(20) - NOTNULL
+description: TEXT(1000) - NOTNULL
+ready_delivery: BOOLEAN - TINYINT(1) - NOTNULL
+price: INT - MEDIUMINT(1000000) - NOTNULL
+possible_financing: BOOLEAN - TINYINT(1) - DEFAULT(1)
