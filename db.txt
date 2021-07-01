@@ -4,9 +4,14 @@ vin: STRING - CHAR(17) - PRIMARY KEY
 brand: STRING - VARCHAR(20) - NOTNULL
 model: STRING - VARCHAR(20) - NOTNULL
 registration: DATE - DATE - NOTNULL
-km: INT - MEDIUMINT(1000000) - NOTNULL
-owners: INT - TINYINT(20) - NOTNULL
+covered_miles: INT - MEDIUMINT(1000000) - NOTNULL
+past_owners: INT - TINYINT(20) - NOTNULL
+main_characteristics: TEXT(1000) - NOTNULL
+optionals: TEXT(1000) - NOTNULL
 description: TEXT(1000) - NOTNULL
 ready_delivery: BOOLEAN - TINYINT(1) - NOTNULL
 price: INT - MEDIUMINT(1000000) - NOTNULL
 possible_financing: BOOLEAN - TINYINT(1) - DEFAULT(1)
+where_is: STRING - VARCHAR(50) - NOTNULL
+exact_position: GEOGRAPHY
+contacts: STRING - VARCHAR(100) - NOTNULL
